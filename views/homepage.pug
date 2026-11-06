@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Cars
+        a.add-link(href="/update-cobj") Add to this table
+        table.cars-table
+            thead
+                tr
+                    th Name
+                    th Car Model
+                    th Engine
+                    th Wheels
+            tbody
+                each car in data
+                    tr
+                        td #{car.properties.name}
+                        td #{car.properties.car_model}
+                        td #{car.properties.engine}
+                        td #{car.properties.wheels}
