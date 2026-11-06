@@ -56,3 +56,29 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+
+.add-link,
+.home-link {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    color: #33475b;
+    font-weight: bold;
+}
+
+.cars-table {
+    width: calc(100% - 2rem);
+    margin: 0 1rem 2rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.cars-table th,
+.cars-table td {
+    border: solid 1px lightgrey;
+    padding: .5rem .75rem;
+    text-align: left;
+}
+
+.cars-table th {
+    background-color: #f5f8fa;
+}
